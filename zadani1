@@ -1,0 +1,81 @@
+Tok Excel
+1.	Otevřete Excel s povětrnostními podmínkami
+2.	Vytvořte výstupní proměnnou „poslední_datum“, datový typ text
+3.	Iterujte listy v sešitu
+4.	V každém listu nahraďte čárky tečkami ve sloupcích 3-8 (třetím až osmým sloupci)
+5.	Do schránky si uložte hodnotu z posledního neprázdného řádku druhého sloupce
+6.	Do výstupní proměnné „poslední_datum“ uložte hodnotu z bodu 5
+7.	Souboru uložte jako „upraveno.xlsx“
+8.	Zavřete aplikaci MS Excel
+9.	Do okna vypište uživateli informaci „Tok dokončen úspěšně, doba běhu {}sekund“
+10.	Ukončete tok
+
+BONUS:
+Získejte rok z posledního datumu (hodnota uložená v proměnné „poslední_datum“
+
+
+11.	Pokud soubor s povětrnostními podmínkami obsahuje list s názvem „graz“, vypište uživateli zprávu „Soubor obsahuje list“, v opačném případě vypište „soubor neobsahuje list“.
+12.	V souboru s povětrnostními podmínkami aktivujte list „mosnov“, pokud:
+a.	 takový list v souboru není, přejděte na popisek „list nenalezen“
+i.	vypište uživateli zprávu „list mosnov nenalezen“
+ii.	Ukončete tok
+b.	takový list v souboru je, přejděte na popisek „list nalezen“
+i.	vypište uživateli zprávu „list mosnov nalezen“
+ii.	Ukončete tok
+13.	Vytvořte následující chybový blok „vyber_listu“, při chybě přejděte na popisek „list nenalezen“. Jednotlivé kroky bloku:
+a.	Otevřete Excel s povětrnostními podmínkami
+b.	Vyberte list „mosnov“
+
+__________________________________________________________________________________
+
+Tok uživatelské rozhraní
+1.	Vytvořte si na ploše složku s názvem PAUT
+2.	Kliknutí ukazatele na ikonu Koš
+3.	Kliknutí na tlačítko pro „Vysypání koše“
+4.	Přejděte do složky PAUT
+5.	Přejděte na ikonu „Vlastnosti“ a odešlete kliknutí levým tlačítkem
+6.	Zavřete okno otevřené po vytvoření bodu 5
+ 
+Automatizace prohlížeče
+1.	Otevřete nové okno prohlížeče a přejděte na adresu https://www.google.cz
+2.	Do vyhledávacího pole zapište „počasí praha“
+3.	Odešlete klávesu „Enter“
+4.	Pořiďte snímek obrazovky, který zkopírujete do schránky
+5.	Získejte informaci o aktuálním počasí (teplota) a tu si nechejte v proměnné.
+
+_________________________________________________________________________
+_________________________________________________________________________
+
+Cvičení souhrn
+•	Do složky Plocha ručně vytvořte dokument „pocasi.xlsx“
+•	První list ručně pojmenujte „pocasi“
+•	Do prvního sloupce vepište tyto hodnoty (vždy 1 hodnota = 1 řádek)
+a.	praha
+b.	brno
+c.	ostrava
+d.	plzeň
+e.	olomouc
+Vytvořte tok, který:
+1.	Vygeneruje proměnnou pro dnešní datum a čas
+2.	Otevře dokument „pocasi.xlsx“.
+3.	Prochází neprázdné hodnoty prvního sloupce prvního listu
+4.	Tyto hodnoty dosazuje do vyhledávacího pole na Google, kdy dosazuje „počasí“ + hodnota (město)
+5.	Získá teplotu pro danou hodnotu
+6.	Zkopíruje teplotu do druhého sloupce Excel dokumentu (vždy ke konkrétnímu městu)
+7.	Do třetího sloupce doplní informaci o datumu a čase
+8.	Uloží a zavře „pocasi.xlsx“
+9.	Uzavře prohlížeč
+10.	Ošetřete následující chyby / výjimky
+a.	soubor z bodu 2 se nepodařilo otevřít : vracíme uživateli v oknu zprávu „soubor nenalezen či nejde otevřít“ a tok ukončujeme
+b.	pokud je první neprázdný řádek a sloupec Excel z bodu 2 roven 1 (po odčtení 1), vracíme uživateli zprávu „soubor je prázdný“ a tok ukončujeme
+c.	pokud soubor z bodu 2:
+i.	 nešlo otevřít, do výstupní proměnné s názvem „log“ ukládáme hodnotu „selhalo“ + datum z proměnné z bodu 1
+ii.	šlo otevřít, do výstupní proměnné s názvem „log“ ukládáme hodnotu „probehlo“ + datum z proměnné bodu 1
+
+
+
+
+
+
+
+
