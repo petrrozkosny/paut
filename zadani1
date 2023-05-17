@@ -2,7 +2,7 @@ Tok Excel
 1.	Otevřete Excel s povětrnostními podmínkami
 2.	Vytvořte výstupní proměnnou „poslední_datum“, datový typ text
 3.	Iterujte listy v sešitu
-4.	V každém listu nahraďte čárky tečkami ve sloupcích 3-8 (třetím až osmým sloupci)
+4.	V každém listu nahraďte čárky tečkami
 5.	Do schránky si uložte hodnotu z posledního neprázdného řádku druhého sloupce
 6.	Do výstupní proměnné „poslední_datum“ uložte hodnotu z bodu 5
 7.	Souboru uložte jako „upraveno.xlsx“
@@ -11,7 +11,7 @@ Tok Excel
 10.	Ukončete tok
 
 BONUS:
-Získejte rok z posledního datumu (hodnota uložená v proměnné „poslední_datum“
+Získejte rok z posledního datumu (hodnota uložená v proměnné „poslední_datum“)
 
 
 11.	Pokud soubor s povětrnostními podmínkami obsahuje list s názvem „graz“, vypište uživateli zprávu „Soubor obsahuje list“, v opačném případě vypište „soubor neobsahuje list“.
