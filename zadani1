@@ -1,33 +1,3 @@
-Tok Excel
-1.	Otevřete Excel s povětrnostními podmínkami
-2.	Vytvořte výstupní proměnnou „poslední_datum“, datový typ text
-3.	Iterujte listy v sešitu
-4.	V každém listu nahraďte čárky tečkami
-----------------------------------------------------------------------------------------------
-5. Do nového Excel dokumentu pod sebe ukládat hodnoty z listů Excel s povětrnostmími podmínkami
-6.	Do schránky si uložte hodnotu z posledního neprázdného řádku druhého sloupce Excel z bodu 5
-7.	Nový soubor uložte jako „upraveno.xlsx“
-8.	Zavřete aplikaci MS Excel
-9.	Do okna vypište uživateli informaci „Tok dokončen úspěšně, doba běhu {}sekund“
-10.	Ukončete tok
-
-BONUS:
-Získejte rok z posledního datumu (hodnota uložená v proměnné „poslední_datum“)
-
-
-11.	Pokud soubor s povětrnostními podmínkami obsahuje list s názvem „graz“, vypište uživateli zprávu „Soubor obsahuje list“, v opačném případě vypište „soubor neobsahuje list“.
-12.	V souboru s povětrnostními podmínkami aktivujte list „mosnov“, pokud:
-a.	 takový list v souboru není, přejděte na popisek „list nenalezen“
-i.	vypište uživateli zprávu „list mosnov nenalezen“
-ii.	Ukončete tok
-b.	takový list v souboru je, přejděte na popisek „list nalezen“
-i.	vypište uživateli zprávu „list mosnov nalezen“
-ii.	Ukončete tok
-13.	Vytvořte následující chybový blok „vyber_listu“, při chybě přejděte na popisek „list nenalezen“. Jednotlivé kroky bloku:
-a.	Otevřete Excel s povětrnostními podmínkami
-b.	Vyberte list „mosnov“
-
-__________________________________________________________________________________
 
 Tok uživatelské rozhraní
 1.	Vytvořte si na ploše složku s názvem PAUT
